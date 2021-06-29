@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- This is a template for a landing page!
+       ✓ Fill in the things between the {{double braces}}, removing the {{ and }} in the process.
+       ✓ Make a logo image for the <img> tag, and take note of its width and height.
+       ✓ Make a sharing image for the OpenGraph/Facebook/Twitter <meta> tags (square, 1200x1200px).
+       ✓ Tweak CSS as necessary.
+       ✓ Rename this file to index.html and upload it and the two images to the web root directory on your server.
+       ✓ Remove this comment when done. -->
+  <meta charset="utf-8">
+  <meta name="description" content="{{description for search results}}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta property="og:title" content="{{facebook}}" />
+  <meta property="og:description" content="{{facebook sharing description ...probably same as above!}}" />
+  <meta property="og:url" content="{{url of your website, e.g.: http://example.com/}}" />
+  <meta property="og:image" content="{{url of facebook image, square dimensions, 1200x1200, e.g.: http://example.com/example_share.png}}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{username here}}" />
+  <meta name="twitter:title" content="{{twitter card title here}}" />
+  <meta name="twitter:description" content="{{twitter card description here, probably same as other two descriptions}}" />
+  <meta name="twitter:image" content="{{url of twitter card image, same as facebook image above}}" />
+  <link rel="canonical" href="{{the url of your website}}" />
+  <title>{{page title here, it's what appears in the browser tab}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> <!-- replace with your font! fonts.google.com -->
+  <style>
+    /* This is where we put our CSS. We start with a reset.css to normalize browser defaults, and then set up everything. */
+
+    /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
+
+    /* colors!
+      // a quick cheatsheet if you're using colors below
+      lightblue: #6F8C95
+      tan: #8F8951
+    */
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 16px;
+      line-height: 1.2em;
+      background: {{color or image here, e.g.: #FFFFFF}};
+      /*background-size: cover; */
+      color: {{color here, e.g.: #000000}};
+    }
+
+    #container {
+      width: 100%;
+      width: 100vw;
+      height: 100%;
+      height: 100vh;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+    h1 {
+      visibility: collapse;
+    }
+    #logo {
+      width: 60%;
+      max-width: {{512px}}; /* width of ./logo.png */
+      max-height: {{251px}}; /* height of ./logo.png */
+      margin: 0 auto 1em;
+      display: block;
+    }
+    p {
+      width: 100%;
+      padding: 0 2em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div role="main" id="container">
+    <h1>{{Title (hidden) }}</h1>
+    <img id="logo" src="./{{project}}_logo.png" alt="{{name of your project}} logo" />
+    <p>{{paragraph of brief text: what it is, when it's coming, actions to take if any}}</p>
+  </div>
+</body>
+</html>

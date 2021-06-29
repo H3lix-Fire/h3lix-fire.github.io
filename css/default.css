@@ -1,14 +1,4 @@
-﻿/*!
-* Created by Kroplet (https://www.kroplet.com) 
-* The easiest way to create Bootstrap 4 themes. 
-*/
-
-/*!
-* Bootstrap v4.1.0 (https://getbootstrap.com) 
-* Copyright 2011-2017 The Bootstrap Authors 
-* Copyright 2011-2017 Twitter, Inc. 
-* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)*/
-:root {
+﻿:root {
   --blue: #2979ff;
   --indigo: #3d5afe;
   --purple: #d500f9;
@@ -1835,8 +1825,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #11171a;
-  background-color: #1de9b6;
-  border-color: #1de9b6; }
+  background-color: #ffbc00;
+  border-color: #ffbc00; }
   .btn-primary:hover {
     color: #ffffff;
     background-color: #14cc9e;
@@ -4275,7 +4265,7 @@ button.close {
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-top .arrow::after,
   .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 2px;
@@ -4295,7 +4285,7 @@ button.close {
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-right .arrow::after,
   .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 2px;
@@ -4312,7 +4302,7 @@ button.close {
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-bottom .arrow::after,
   .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 2px;
@@ -4341,7 +4331,7 @@ button.close {
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-left .arrow::after,
   .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 2px;
@@ -7405,7 +7395,7 @@ body {
   text-transform: uppercase;
   font-size: 15px; }
   .btn.btn-primary {
-    box-shadow: 0 8px 16px rgba(29, 233, 182, 0.3);
+    box-shadow: 0 8px 16px rgba(255, 164, 0, 0.3);
     transition: all .2s ease-out; }
     .btn.btn-primary:hover {
       box-shadow: 0 8px 20px rgba(29, 233, 182, 0.35); }

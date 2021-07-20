@@ -2,6 +2,7 @@
  *Animates connected nodes about a grid
  *-------------------------------------
  *@date:      19th April, 2020
+ *Created by: Red
  */
 //set up the gridworm
 class GridWorm {

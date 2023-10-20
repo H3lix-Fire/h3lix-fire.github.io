@@ -3,9 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="!Null">
-  <meta property="og:description" content="Fuck u lol">
-  <meta property="og:image" content="">
-  <meta name="theme-color" content="#292929">
-  <meta name="twitter:card" content="summary_large_image">
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const title = urlParams.get('title');
+    const description = urlParams.get('description');
+    const image = urlParams.get('image');
+    const image = urlParams.get('color');
+
+    const ogpTags = [
+        { property: 'og:title',       content: title },
+        { property: 'og:description', content: description },
+        { property: 'og:image',       content: image },
+        { property: 'theme-color',    content: color}
+    ];
+
+    const head = document.head;
+    ogpTags.forEach(tag => {
+        const metaTag = document.createElement('meta');
+        metaTag.setAttribute('property', tag.property);
+        metaTag.setAttribute('content', tag.content);
+        head.appendChild(metaTag);
+    });
+  </script>
 </head>
